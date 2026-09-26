@@ -3,47 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>R-0x // Data Archive</title>
+    <title>R-0x // Dispatch Archive</title>
     <style>
         body {
-            font-family: monospace;
-            background-color: #121212;
-            color: #e0e0e0;
-            padding: 20px;
-            max-width: 800px;
+            font-family: serif;
+            background-color: #faf9f6; /* Soft cream paper tone */
+            color: #1a1a1a;
+            padding: 40px 20px;
+            max-width: 700px;
             margin: 0 auto;
-            line-height: 1.6;
+            line-height: 1.7;
+        }
+        header {
+            border-bottom: 2px solid #1a1a1a;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+            text-align: center;
         }
         h1 {
-            color: #00ff66;
-            border-bottom: 1px solid #333;
-            padding-bottom: 10px;
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+        }
+        .tagline {
+            font-style: italic;
+            color: #555;
+            margin: 0;
+        }
+        .post-item {
+            margin-bottom: 30px;
+            list-style-type: none;
         }
         .post-link {
-            color: #00ffff;
+            color: #1a1a1a;
             text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: bold;
+            display: block;
         }
         .post-link:hover {
-            text-decoration: underline;
+            color: #c94c4c; /* Deep ink red accent */
         }
         .date {
-            color: #888;
+            color: #666;
             font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        ul {
+            padding: 0;
         }
     </style>
 </head>
 <body>
 
-    <h1>R-0x // POLITICAL ARCHIVE</h1>
-    <p>Independent investigation log. Strictly factual. Fully verified.</p>
+    <header>
+        <h1>The R-0x Dispatch</h1>
+        <p class="tagline">Independent investigation, documentation, and regional reporting.</p>
+    </header>
 
-    <h2>Recent Dispatches</h2>
-    <ul>
-        <li>
-            <span class="date">2026-09-26</span> — 
-            <a class="post-link" href="post-01.html">First Investigation Title Goes Here</a>
-        </li>
-    </ul>
+    <main>
+        <ul>
+            <li class="post-item">
+                <span class="date">September 26, 2026</span>
+                <a class="post-link" href="post-01.html">First Investigation Title Goes Here</a>
+            </li>
+        </ul>
+    </main>
 
 </body>
 </html>
