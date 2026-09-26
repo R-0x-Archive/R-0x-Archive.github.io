@@ -45,9 +45,24 @@
             margin: 0 0 20px 0;
             font-weight: 900;
         }
+        h3 {
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 40px;
+            border-bottom: 1px solid #1c1c1c;
+            padding-bottom: 5px;
+        }
         p {
             margin-bottom: 20px;
             font-size: 1.05rem;
+        }
+        ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        li {
+            margin-bottom: 10px;
         }
         .evidence-box {
             background-color: #ebe7dd;
@@ -57,6 +72,42 @@
             font-family: monospace;
             font-size: 0.95rem;
             white-space: pre-wrap;
+        }
+        /* Similar Posts Footer Layout */
+        .related-section {
+            margin-top: 60px;
+            border-top: 2px solid #1c1c1c;
+            padding-top: 20px;
+        }
+        .related-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 15px;
+        }
+        @media (max-width: 480px) {
+            .related-grid { grid-template-columns: 1fr; }
+        }
+        .related-card {
+            background-color: #ebe7dd;
+            padding: 15px;
+            border: 1px solid #d3cfc5;
+        }
+        .related-card a {
+            color: #1c1c1c;
+            font-weight: bold;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .related-card a:hover {
+            color: #8b0000;
+            text-decoration: underline;
+        }
+        .related-card span {
+            font-size: 0.8rem;
+            color: #666;
+            text-transform: uppercase;
         }
     </style>
 </head>
@@ -76,27 +127,51 @@
 
             <p>The core issue is structural. When power is centralized in one city, local communities lose their voice. First Minister John Swinney's recent acknowledgement that "some councils are too big to be local" has thrown the gates wide open for a total structural break-up.</p>
 
-            <div class="evidence-box">[THE TIMELINE // SEPTEMBER 2026]
+            <h3>The Local Friction Points</h3>
+            <p>To understand the current political battle, we have to look past the dense government lingo and focus on how power actually functions here. Under the current status quo, Scotland is managed by 32 individual councils. While places like Dundee or Clackmannanshire are physically tiny, our own Highland Council is a geographical monster. </p>
+            
+            <p>This creates an illusion of local control. You will frequently hear about regional sub-groups like the <em>Inverness and Nairn Area Committee</em>. However, these small assemblies do not hold any real purse strings. The heavy-duty infrastructure budgets, housing allocations, and macro funding strategies remain tightly locked behind the main doors on Glenurquhart Road.</p>
+
+            <h3>The Two-Tier Gamble</h3>
+            <p>The newly proposed framework seeks to replace these 32 councils with a two-tier model: a small handful of massive <strong>Regional Authorities</strong> tasked with major strategic operations, sitting directly above roughly 120 to 160 hyper-local <strong>Community Authorities</strong> built around individual towns.</p>
+            
+            <p>For Inverness, this is a distinct double-edged sword. While a dedicated local Community Authority might finally give our immediate neighborhoods genuine decision-making power over local high streets and planning laws, the overarching Regional Authority would cover an even larger territory than before—threatening to distance macro-decisions even further from the community's grasp.</p>
+
+            <!-- Evidence / Timeline Box -->
+            <div class="evidence-box">[RECORD LOG // TRACKING TIMELINE]
 
 • Sept 1: FM John Swinney announces radical plans to reshape public infrastructure, declaring mega-councils "too big to be local."
-• Sept 17: Highland Council leadership demands emergency meeting with the First Minister to defend their jurisdiction.
+• Sept 17: Highland Council leadership requests urgent consultations with the First Minister to defend their current jurisdiction.
 • Sept 21: Scottish Government officially publishes the two-tier local government reform outline.
-• Sept 22: Highland MSPs publicly demand the government fully "break up the Highland Council" rather than building an even larger central authority.</div>
+• Sept 22: Local MSPs publicly advocate for a complete territorial break-up of the Highland Council entity.</div>
 
-            <p>The R-0x Dispatch will continuously monitor this dossier. As budgets are negotiated and geographic boundaries drawn, the data will be logged directly to this open node.</p>
+            <p>The R-0x Dispatch will continue to track this administrative friction as boundaries and budgets are drawn. The data will be updated here as public records surface.</p>
 
         </article>
+
+        <!-- Similar Posts Template Footer -->
+        <section class="related-section">
+            <h3>Similar Dispatches</h3>
+            <div class="related-grid">
+                
+                <!-- Slot 1 -->
+                <div class="related-card">
+                    <span>Record #002 // Pending</span>
+                    <a href="post-02.html">Second Investigation Title Placeholder</a>
+                    <p style="font-size: 0.9rem; margin: 0; color: #444;">A brief preview snippet describing your next upcoming regional data record text goes here.</p>
+                </div>
+
+                <!-- Slot 2 -->
+                <div class="related-card">
+                    <span>Record #003 // Pending</span>
+                    <a href="post-03.html">Third Investigation Title Placeholder</a>
+                    <p style="font-size: 0.9rem; margin: 0; color: #444;">A brief preview snippet describing your third upcoming regional data record text goes here.</p>
+                </div>
+
+            </div>
+        </section>
+
     </div>
-            <h3>Simplifying the Mega-Council Shuffle</h3>
-            <p>To understand the current political battle, we have to look at how Scotland is chopped up right now compared to what the government wants to do next:</p>
-
-            <ul>
-                <li><strong>The Status Quo:</strong> Scotland is run by 32 individual councils. Some are tiny city-councils, but our <em>Highland Council</em> is an absolute monster covering a third of the country.</li>
-                <li><strong>The Illusion of Local Power:</strong> You might hear about local sub-committees like the <em>Inverness and Nairn Area Committee</em>. While these sound local, they do not hold the real purse strings. The massive, strategic money decisions are locked inside the central headquarters on Glenurquhart Road.</li>
-                <li><strong>The New Two-Tier Plan:</strong> The government wants to scrap the 32 councils entirely. They plan to replace them with roughly 6 to 10 giant <em>Regional Authorities</em> for heavy-duty infrastructure, and 120 to 160 tiny, hyper-local <em>Community Authorities</em> for individual towns.</li>
-            </ul>
-
-            <p>For Inverness and the wider Highlands, this is a double-edged sword. While it could finally give local neighborhoods actual decision-making powers over their own high streets, it also threatens to absorb the wider region into an even larger, more distant super-regional authority.</p>
 
 </body>
 </html>
