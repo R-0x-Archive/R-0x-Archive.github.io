@@ -3,74 +3,209 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>R-0x // Dispatch Archive</title>
+    <title>The R-0x Dispatch // Data Archive</title>
     <style>
+        /* Classic Newspaper Theme Setup */
         body {
-            font-family: serif;
-            background-color: #faf9f6; /* Soft cream paper tone */
-            color: #1a1a1a;
-            padding: 40px 20px;
-            max-width: 700px;
-            margin: 0 auto;
-            line-height: 1.7;
+            font-family: "Georgia", "Times New Roman", serif;
+            background-color: #f4f1ea; /* Muted vintage paper tone */
+            color: #1c1c1c;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
         }
-        header {
-            border-bottom: 2px solid #1a1a1a;
-            padding-bottom: 20px;
-            margin-bottom: 40px;
+
+        /* Top Navigation Bar */
+        nav {
+            background-color: #1c1c1c;
+            padding: 10px 20px;
             text-align: center;
         }
-        h1 {
-            font-size: 2.2rem;
-            letter-spacing: 1px;
-            margin: 0 0 10px 0;
-            text-transform: uppercase;
-        }
-        .tagline {
-            font-style: italic;
-            color: #555;
-            margin: 0;
-        }
-        .post-item {
-            margin-bottom: 30px;
-            list-style-type: none;
-        }
-        .post-link {
-            color: #1a1a1a;
+        nav a {
+            color: #f4f1ea;
             text-decoration: none;
-            font-size: 1.3rem;
-            font-weight: bold;
-            display: block;
-        }
-        .post-link:hover {
-            color: #c94c4c; /* Deep ink red accent */
-        }
-        .date {
-            color: #666;
+            margin: 0 15px;
             font-size: 0.9rem;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 1px;
         }
-        ul {
-            padding: 0;
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Newspaper Header Plinth */
+        header {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px 20px 20px;
+            text-align: center;
+            border-bottom: 4px double #1c1c1c; /* Traditional double border */
+        }
+        header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            font-weight: 900;
+            letter-spacing: -1px;
+        }
+        header p {
+            font-style: italic;
+            color: #444;
+            margin: 5px 0 0 0;
+        }
+
+        /* Responsive Newspaper Multi-Column Layout */
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 2fr 1fr; /* 2 Columns: Main news and Sidebar */
+            gap: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr; /* Drop to 1 column on phone view */
+            }
+        }
+
+        /* Main Investigation Log Column */
+        main h2 {
+            border-bottom: 2px solid #1c1c1c;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            margin-top: 0;
+        }
+        .article-entry {
+            margin-bottom: 35px;
+            border-bottom: 1px solid #d3cfc5;
+            padding-bottom: 25px;
+        }
+        .article-entry:last-child {
+            border-bottom: none;
+        }
+        .date {
+            font-size: 0.85rem;
+            color: #666;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .article-title {
+            color: #1c1c1c;
+            text-decoration: none;
+            font-size: 1.6rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .article-title:hover {
+            color: #8b0000; /* Deep burgundy print ink response */
+        }
+
+        /* Sidebar Column */
+        aside h3 {
+            border-bottom: 2px solid #1c1c1c;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            margin-top: 0;
+        }
+        .sidebar-section {
+            background-color: #ebe7dd; /* Slightly darker box for contrast */
+            padding: 20px;
+            margin-bottom: 30px;
+            border: 1px solid #d3cfc5;
+        }
+        .sidebar-section p {
+            font-size: 0.95rem;
+            margin: 0 0 10px 0;
+        }
+        .sidebar-section ul {
+            padding-left: 20px;
+            margin: 0;
+            font-size: 0.95rem;
+        }
+        .sidebar-section li {
+            margin-bottom: 5px;
         }
     </style>
 </head>
 <body>
 
+    <!-- Top Navigation Block -->
+    <nav>
+        <a href="index.html">Home Archive</a>
+        <a href="about.html">Manifesto</a>
+        <a href="contact.html">Secure Tips</a>
+    </nav>
+
+    <!-- Master Header -->
     <header>
-        <h1>The R-0x Dispatch</h1>
-        <p class="tagline">Independent investigation, documentation, and regional reporting.</p>
+        <h1>THE R-0x DISPATCH</h1>
+        <p>Unfiltered investigation, local analysis, regional records.</p>
     </header>
 
-    <main>
-        <ul>
-            <li class="post-item">
+    <div class="container">
+        
+        <!-- Left Side: Continuous Investigations Column -->
+        <main>
+            <h2>Dispatch Logs</h2>
+
+            <!-- Template Article 1 -->
+            <article class="article-entry">
                 <span class="date">September 26, 2026</span>
-                <a class="post-link" href="post-01.html">First Investigation Title Goes Here</a>
-            </li>
-        </ul>
-    </main>
+                <a href="post-01.html" class="article-title">First Investigation Title Goes Here</a>
+                <p>Enter a brief 2-3 sentence teaser snippet of your investigation here to catch readers' attention before they click the main link...</p>
+            </article>
+
+            <!-- Template Article 2 -->
+            <article class="article-entry">
+                <span class="date">September 20, 2026</span>
+                <a href="post-02.html" class="article-title">Second Investigation Title Goes Here</a>
+                <p>Enter your second article snippet text right here. As you break new stories, you can continuously copy and paste this block up to the top.</p>
+            </article>
+
+            <!-- Template Article 3 -->
+            <article class="article-entry">
+                <span class="date">September 12, 2026</span>
+                <a href="post-03.html" class="article-title">Third Investigation Title Goes Here</a>
+                <p>Enter your third archival story summary here to maintain a rolling feed of records on your main index file.</p>
+            </article>
+        </main>
+
+        <!-- Right Side: Sidebar Dossier -->
+        <aside>
+            
+            <!-- Metadata Profile Box -->
+            <div class="sidebar-section">
+                <h3>Operator: R-0x</h3>
+                <p>Independent records tracker. Fueled by strong black coffee and classical composition, particularly Tchaikovsky's structural intensity. Operating on flat hierarchies—just a peer documenting local reality alongside other peers.</p>
+            </div>
+
+            <!-- Subject Genres Category List -->
+            <div class="sidebar-section">
+                <h3>Regional Categories</h3>
+                <ul>
+                    <li><a href="#" style="color:#1c1c1c;">Financial Logs</a></li>
+                    <li><a href="#" style="color:#1c1c1c;">Council Monitoring</a></li>
+                    <li><a href="#" style="color:#1c1c1c;">Corporate Influence</a></li>
+                    <li><a href="#" style="color:#1c1c1c;">Public Records</a></li>
+                </ul>
+            </div>
+
+            <!-- Influence Index Section -->
+            <div class="sidebar-section">
+                <h3>Literary References</h3>
+                <p>Analyzing modern human systems via the sharp psychological blueprints left behind by Dostoevsky.</p>
+            </div>
+
+        </aside>
+
+    </div>
 
 </body>
 </html>
